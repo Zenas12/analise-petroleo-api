@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - Analise-Petroleo
+name: Build and deploy Python app to Azure Web App - analise-petroleo
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python version
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.10'
 
       # 🛠️ Local Build Section (Optional)
       # The following section in your workflow is designed to catch build issues early on the client side, before deployment. This can be helpful for debugging and validation. However, if this step significantly increases deployment time and early detection is not critical for your workflow, you may remove this section to streamline the deployment process.
@@ -63,14 +63,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_9B43D1005E404500BFE8E826E23355FB }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_18E243362F9049418B5384F41CAAEC24 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_66236E778A31441A9F21C15E65EFA5D5 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_CA2872F4BBA34045B652DEB3F4356890 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_683D88AA17BB4D3EAD75DF951390ACD6 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4BBC6422C493401A85882C803C74DB43 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'Analise-Petroleo'
+          app-name: 'analise-petroleo'
           slot-name: 'Production'
           
