@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Gráfico - Série Histórica</title>
+  <style>
+    body { background:#0d0d0d; color:#eee; font-family: Arial, sans-serif; text-align:center; padding:30px; }
+    .box { max-width:1000px; margin:0 auto; background:#111; padding:20px; border-radius:10px; border:2px solid #19ff7a; }
+    img { width:100%; height:auto; border-radius:8px; }
+    .actions { margin-top:18px; }
+    .btn { background:#19ff7a; color:#001; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:bold; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2 style="color:#19ff7a">Série Histórica — Preço do Barril (USD)</h2>
+    {% if img_series %}
+      <img src="data:image/png;base64,{{ img_series }}" alt="Gráfico da série">
+    {% else %}
+      <p>Não foi possível gerar o gráfico (verifique o CSV).</p>
+    {% endif %}
+
+    <div class="actions">
+      <a class="btn" href="/forecast">Visualizar preços futuros →</a>
+      &nbsp; <a class="btn" href="/">Voltar</a>
+    </div>
+  </div>
+</body>
+</html>

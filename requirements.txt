@@ -1,9 +1,6 @@
 flask
 pandas
 matplotlib
-statsmodels
 pmdarima
-scikit-learn
 numpy
 gunicorn
-pysqlite3-binary

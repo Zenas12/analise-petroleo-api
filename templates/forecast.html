@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Previsões — Próximos 6 Meses</title>
+  <style>
+    body { background:#0a0a0a; color:#eee; font-family: Arial, sans-serif; padding:30px; }
+    .wrap { max-width:900px; margin:0 auto; background:#111; padding:20px; border-radius:10px; border:2px solid #19ff7a; }
+    h2 { color:#19ff7a; }
+    .table-wrap { overflow:auto; margin-top:10px; }
+    table.forecast-table { width:100%; border-collapse:collapse; color:#fff; }
+    table.forecast-table th, table.forecast-table td { padding:10px; border-bottom:1px solid #222; text-align:left; }
+    table.forecast-table th { background:#0f0f0f; color:#19ff7a; }
+    .btn { background:#19ff7a; color:#001; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block; margin-top:12px;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Previsão — Próximos 6 Meses</h2>
+    <p>Valores previstos (média pontual) com intervalo de confiança ao lado:</p>
+
+    <div class="table-wrap">
+      {{ table_html|safe }}
+    </div>
+
+    <a class="btn" href="/grafico">← Voltar ao gráfico</a>
+    &nbsp;
+    <a class="btn" href="/">Início</a>
+  </div>
+</body>
+</html>
