@@ -1,7 +1,7 @@
-flask
+Flask==3.0.0
+gunicorn
 pandas
+numpy
 matplotlib
 pmdarima
-numpy
-gunicorn
 pysqlite3-binary
