@@ -6,3 +6,4 @@ pmdarima
 scikit-learn
 numpy
 gunicorn
+pysqlite3-binary

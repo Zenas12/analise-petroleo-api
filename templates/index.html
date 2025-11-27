@@ -2,24 +2,55 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Análise do Petróleo – Azure</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <title>Análise do Petróleo</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            margin-top: 50px;
+            color: lime;
+            font-size: 40px;
+            text-shadow: 0 0 10px lime;
+        }
+        .box {
+            width: 60%;
+            margin: auto;
+            padding: 30px;
+            background: #111;
+            border-radius: 12px;
+            border: 2px solid lime;
+            box-shadow: 0 0 15px lime;
+        }
+        .btn {
+            background: lime;
+            color: black;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 25px;
+        }
+        .btn:hover {
+            background: #bfff00;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>🔍 Previsão do Preço do Petróleo</h1>
-    <p class="descricao">
-        Esta aplicação utiliza técnicas de <b>análise de séries temporais</b> para prever 
-        o preço do petróleo WTI com base em dados históricos disponibilizados pela U.S. Energy Information Administration.
+<h1>📊 Previsão do Preço do Petróleo</h1>
+
+<div class="box">
+    <p>
+        Este sistema utiliza técnicas avançadas de <b>Séries Temporais</b> para prever o preço do petróleo nos próximos meses.
+        O modelo ARIMA automático foi treinado com dados reais do dataset fornecido.
     </p>
 
-    <p class="descricao">
-        O sistema foi desenvolvido em Python, hospedado no Azure App Service e utiliza 
-        processamento automatizado para previsão dos próximos meses.
-    </p>
-
-    <a class="botao" href="/modelo">Ver modelo e previsões →</a>
+    <a class="btn" href="/modelo">➡ Ver Modelo e Resultados</a>
 </div>
 
 </body>
