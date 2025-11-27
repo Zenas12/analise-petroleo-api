@@ -4,3 +4,4 @@ matplotlib
 pmdarima
 numpy
 gunicorn
+pysqlite3-binary
