@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelo ARIMA – Resultados</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📈 Modelo Utilizado: ARIMA Automático</h1>
+
+    <p class="descricao">
+        O modelo ARIMA (AutoRegressive Integrated Moving Average) é amplamente utilizado para 
+        previsão de séries temporais. Aqui utilizamos a versão <b>auto_arima</b> que identifica automaticamente
+        os melhores parâmetros para previsão do petróleo.
+    </p>
+
+    <h2>🔮 Previsão</h2>
+    <p class="resultado">Última previsão calculada: <b>US$ {{ previsao }}</b></p>
+
+    <h2>📊 Gráficos</h2>
+    <a class="botao" href="/grafico" target="_blank">Ver gráfico da série →</a>
+
+    <br><br>
+    <a class="botao volta" href="/">← Voltar ao início</a>
+</div>
+
+</body>
+</html>

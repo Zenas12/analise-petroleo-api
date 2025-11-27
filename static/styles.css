@@ -1,0 +1,54 @@
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: 60px auto;
+    background: #1b1b1b;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0f0;
+}
+
+h1 {
+    color: #09ff00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    background: #09ff00;
+    color: #000;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #0bc900;
+}
+
+.volta {
+    background: #555;
+}
+
+.resultado {
+    background: #222;
+    padding: 15px;
+    border-left: 4px solid #09ff00;
+    border-radius: 5px;
+}
